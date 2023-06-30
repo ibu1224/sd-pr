@@ -1,0 +1,6 @@
+jobs:
+  artifact:
+    image: node:18
+    requires: [ ~pr, ~pr:foo ]
+    steps:
+      - echo "HI"
